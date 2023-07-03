@@ -16,6 +16,6 @@ public class IndexController {
 
     @GetMapping
     public ResponseEntity<String> home() {
-        return ResponseEntity.ok("Hello Jenkins Project("+envName+"), Version : 1.0.1");
+        return ResponseEntity.ok("Hello Jenkins Project("+envName+"), Version : 1.0.2");
     }
 }
