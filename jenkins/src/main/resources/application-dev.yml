@@ -1,2 +1,5 @@
 server:
   port: 18081
+
+app:
+  env-name: dev
