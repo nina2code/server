@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /deploy/jenkins-deploy-api.jar
+    destination: /home/ec2-user/apps/prod
+hooks:
+  ApplicationStart:
+    - location: deploy.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: deploy-before.sh
+      timeout: 300
+      runas: root
