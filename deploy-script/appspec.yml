@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /deploy/jenkins-deploy-api.jar
+  - source: /jenkins-deploy-api.jar
     destination: /home/ec2-user/apps/prod
 hooks:
   ApplicationStart:
