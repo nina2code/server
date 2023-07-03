@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /jenkins-deploy-api.jar
-    destination: /home/ec2-user/apps/prod
+    destination: /home/ec2-user/apps/dev
   - source: /jenkins-deploy-api-dev.conf
-    destination: /home/ec2-user/apps/prod
+    destination: /home/ec2-user/apps/dev
 file_exists_behavior: OVERWRITE
 
 hooks:
