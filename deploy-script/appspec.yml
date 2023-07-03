@@ -3,6 +3,10 @@ os: linux
 files:
   - source: /jenkins-deploy-api.jar
     destination: /home/ec2-user/apps/prod
+  - source: /jenkins-deploy-api.conf
+    destination: /home/ec2-user/apps/prod
+file_exists_behavior: OVERWRITE
+
 hooks:
   ApplicationStart:
     - location: deploy.sh
